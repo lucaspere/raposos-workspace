@@ -1,0 +1,30 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "raposos-notes",
+  "projectType": "application",
+  "sourceRoot": "packages/raposos-notes/src",
+  "targets": {
+    "build": {
+      "executor": "@wanews/nx-vite:build",
+      "options": {}
+    },
+    "serve": {
+      "executor": "@wanews/nx-vite:serve",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["packages/raposos-notes/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "npx vitest --run",
+        "cwd": "packages/raposos-notes"
+      }
+    }
+  },
+  "tags": []
+}

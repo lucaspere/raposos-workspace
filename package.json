@@ -4,7 +4,11 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@wanews/nx-vite": "^0.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@nrwl/cli": "14.8.2",
     "@nrwl/js": "14.8.2",
