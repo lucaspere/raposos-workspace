@@ -1,4 +1,12 @@
 import React from 'react';
+import { NavBar } from './components/NavBar';
+import { NoteContainer } from './components/NoteContainer';
 
-type AppProps = { message: string };
-export const App = ({ message }: AppProps) => <div>{message}</div>;
+export const App = () => {
+  return (
+    <div>
+      <NavBar />
+      <NoteContainer />
+    </div>
+  );
+};
