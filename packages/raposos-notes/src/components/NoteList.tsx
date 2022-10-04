@@ -6,5 +6,7 @@ type NoteListProps = {
 };
 
 export const NoteList = ({ notes }: NoteListProps) => {
-  return <div>{notes.map((note) => NoteCard(note))}</div>;
+  return (
+    <div className="flex flex-row">{notes.map((note) => NoteCard(note))}</div>
+  );
 };

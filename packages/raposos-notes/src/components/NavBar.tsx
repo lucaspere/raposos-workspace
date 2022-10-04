@@ -3,7 +3,8 @@ import { SearchBar } from './SearchBar';
 
 export const NavBar = () => {
   return (
-    <div>
+    <div className="flex flex-row">
+      <h1>Logo</h1>
       <SearchBar />
     </div>
   );

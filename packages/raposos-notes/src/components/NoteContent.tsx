@@ -23,7 +23,7 @@ const mock = [
 
 export const NoteContent = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <NoteForm />
       <NoteList notes={mock} />
     </div>

@@ -4,7 +4,7 @@ import { NoteContent } from './NoteContent';
 
 export const NoteContainer = () => {
   return (
-    <div>
+    <div className="flex flex-row">
       <NoteMenu />
       <NoteContent />
     </div>

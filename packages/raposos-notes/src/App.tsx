@@ -4,7 +4,7 @@ import { NoteContainer } from './components/NoteContainer';
 
 export const App = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <NavBar />
       <NoteContainer />
     </div>
